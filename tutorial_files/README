@@ -1,0 +1,23 @@
+VOLTDB Tutorial
+===============
+
+This folder contains the source and data files for the VoltDB tutorial. The tutorial itself can be found at:
+
+      http://voltdb.com/docs/tutorial/ 
+
+To use these files, at the start of each part of the tutorial, copy the necessary sources files from the subfolder to the main folder. For example, at the beginning of Part One, use the following shell command:
+
+          $ cp -r tutorial1/* ./
+
+Then following the instructions in the tutorial.
+
+Copyright Notice
+================
+
+The data files used in the tutorial are provided courtesy of various departments of the United States government. We wish to thank the following organizations for their generosity in making this information available:
+
+Population data: US Census bureau. http://www.census.gov/
+
+Place names and elevation: USGS U.S. Board on Geographic Names http://geonames.usgs.gov/
+
+State FIPS codes: U.S. Environmental Protection Agency http://www.epa.gov/

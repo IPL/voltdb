@@ -1,0 +1,12 @@
+Program args:
+create
+catalog
+catalog.jar
+
+VM args:
+-ea
+-server
+-Xmx2048m
+-Xcheck:jni
+-Dlog4j.configuration=file:///Users/xyw/Documents/workspace/voltdb/voltdb/log4j.xml 
+-Djava.library.path=voltdb

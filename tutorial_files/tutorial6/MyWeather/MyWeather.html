@@ -1,0 +1,120 @@
+<html>
+<head>
+<script type="text/javascript" src="MyWeather.js"></script>
+<script type="text/javascript" src="counties.js"></script>
+<style type="text/css">
+body { 
+   background-color: #eeddaa; 
+   text-align: center;
+   font-family: sans-serif;
+}
+div {
+   width: 75%;
+/*   margin-top: 1em;
+   margin-bottom: 1em;
+*/
+   background-color: white;
+   margin: 1em auto;
+   padding: 6pt;
+}
+div.userdata {
+   max-width: 300pt;
+   height: auto;
+}
+
+div.alerts {
+    max-width: 600pt;
+    height: 75%;
+    min-height: 10em;
+    overflow:auto;
+    text-align: left;
+}
+h3 {
+    text-align: center;
+}
+p.credits {
+    font-size: 75%;
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+div.userdata p {
+    margin: .5em auto;
+}
+
+
+</style>
+<title>National Weather Warnings</title>
+</head>
+<body onload="init();">
+<h1>Weather Warnings</h1>
+<div class="userdata">
+<p>State: <select id="state" 
+onchange="changeState();">
+<option value="1" selected>ALABAMA</option>
+<option value="2">ALASKA</option>
+<option value="4">ARIZONA</option>
+<option value="5">ARKANSAS</option>
+<option value="6">CALIFORNIA</option>
+<option value="8">COLORADO</option>
+<option value="9">CONNECTICUT</option>
+<option value="10">DELAWARE</option>
+<option value="11">DISTRICT OF COLUMBIA</option>
+<option value="12">FLORIDA</option>
+<option value="13">GEORGIA</option>
+<option value="15">HAWAII</option>
+<option value="16">IDAHO</option>
+<option value="17">ILLINOIS</option>
+<option value="18">INDIANA</option>
+<option value="19">IOWA</option>
+<option value="20">KANSAS</option>
+<option value="21">KENTUCKY</option>
+<option value="22">LOUISIANA</option>
+<option value="23">MAINE</option>
+<option value="24">MARYLAND</option>
+<option value="25">MASSACHUSETTS</option>
+<option value="26">MICHIGAN</option>
+<option value="27">MINNESOTA</option>
+<option value="28">MISSISSIPPI</option>
+<option value="29">MISSOURI</option>
+<option value="30">MONTANA</option>
+<option value="31">NEBRASKA</option>
+<option value="32">NEVADA</option>
+<option value="33">NEW HAMPSHIRE</option>
+<option value="34">NEW JERSEY</option>
+<option value="35">NEW MEXICO</option>
+<option value="36">NEW YORK</option>
+<option value="37">NORTH CAROLINA</option>
+<option value="38">NORTH DAKOTA</option>
+<option value="39">OHIO</option>
+<option value="40">OKLAHOMA</option>
+<option value="41">OREGON</option>
+<option value="42">PENNSYLVANIA</option>
+<option value="44">RHODE ISLAND</option>
+<option value="45">SOUTH CAROLINA</option>
+<option value="46">SOUTH DAKOTA</option>
+<option value="47">TENNESSEE</option>
+<option value="48">TEXAS</option>
+<option value="49">UTAH</option>
+<option value="50">VERMONT</option>
+<option value="51">VIRGINIA</option>
+<option value="53">WASHINGTON</option>
+<option value="54">WEST VIRGINIA</option>
+<option value="55">WISCONSIN</option>
+<option value="56">WYOMING</option>
+</select>
+</p>
+<p>
+County: <select id="county">
+<option value="0">Select...</option>
+</select>
+</p>
+<p>
+<input type="button" value="Show Alerts" onclick="javascript:getAlerts();"/></p>
+</div>
+<div class="alerts" id="alerts">
+<h3>Instructions</h3><p>Select a state and county then click "Get Alerts" to see the current
+alerts for a given location.</p>
+</div>
+<p class="credits">copyright 2013 by VoltDB, Inc.</p>
+</body>
+</html>
