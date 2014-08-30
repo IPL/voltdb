@@ -39,5 +39,7 @@
 	<classpathentry kind="lib" path="lib/jackson-core-asl-1.9.13.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="lib/zmq-2.1.11.jar"/>
-	<classpathentry kind="output" path="voltdb"/>
+	<classpathentry kind="lib" path="third_party/java/jars/ant-junit.jar"/>
+	<classpathentry kind="lib" path="third_party/java/jars/junit-4.4.jar"/>
+	<classpathentry kind="output" path="obj/eclipse"/>
 </classpath>
